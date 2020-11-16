@@ -1,0 +1,4 @@
+framework module PlatinumSDK {
+  header "PlatinumSDK-Swift.h"
+  requires objc
+}

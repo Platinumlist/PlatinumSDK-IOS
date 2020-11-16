@@ -1,0 +1,59 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PlatinumSDK
+import Foundation
+import Swift
+import UIKit
+import WebKit
+public struct SMUser {
+  public let name: Swift.String
+  public let email: Swift.String
+  public let phone: Swift.String
+  public let nationalityId: Swift.Int
+  public let cityId: Swift.Int
+  public init(name: Swift.String, email: Swift.String, phone: Swift.String, nationalityId: Swift.Int, cityId: Swift.Int)
+}
+public typealias SMResultCallback = ((PlatinumSDK.SMResult?, PlatinumSDK.SMError?) -> Swift.Void)
+public enum SMError : Swift.Error {
+  case wrongParameters
+  case unknown
+  public var localizedDescription: Swift.String {
+    get
+  }
+  public static func == (a: PlatinumSDK.SMError, b: PlatinumSDK.SMError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum SMResult {
+  case checkOut
+  case goBack
+  public static func == (a: PlatinumSDK.SMResult, b: PlatinumSDK.SMResult) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc @_inheritsConvenienceInitializers public class SMWebViewController : UIKit.UIViewController {
+  public var accessToken: Swift.String? {
+    get
+  }
+  public var eventId: Swift.String? {
+    get
+  }
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  public func setParameters(accessToken: Swift.String, eventId: Swift.String, user: PlatinumSDK.SMUser, completion: @escaping PlatinumSDK.SMResultCallback)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension SMWebViewController : WebKit.WKNavigationDelegate {
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+}
+extension PlatinumSDK.SMError : Swift.Equatable {}
+extension PlatinumSDK.SMError : Swift.Hashable {}
+extension PlatinumSDK.SMResult : Swift.Equatable {}
+extension PlatinumSDK.SMResult : Swift.Hashable {}
