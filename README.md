@@ -19,7 +19,7 @@ let user: SMUser = SMUser(name: "Some Name", email: "mail@example.com", phone: "
 ```
 ### Setting Parameters to SMWebViewController
 ```ruby
-vc.setParameters(accessToken: token, eventId: String(model.identifier), user: user) { [weak self] (result, error) in
+vc.setParameters(accessToken: token, eventShowId: String(model.identifier), user: user) { [weak self] (result, error) in
   if let error: SMError = error {
       // handle error 
   }
