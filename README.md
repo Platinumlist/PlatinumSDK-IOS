@@ -17,11 +17,11 @@ let vc: SMWebViewController = .init()
 ```ruby
 let user: SMUser = SMUser(name: "Some Name", email: "mail@example.com", phone: "+971500000000", nationalityId: 123, cityId: 1)
 ```
-name - string, 5 - 200 chars
-email - string, 5 - 200 chars
-phone - expect valid phone number
-nationalityId - int
-cityId - int
+- **name** - string, 5 - 200 chars
+- **email** - string, 5 - 200 chars
+- **phone** - expect valid phone number
+- **nationalityId** - int
+- **cityId** - int
 
 ### Setting Parameters to SMWebViewController
 ```ruby
