@@ -28,7 +28,7 @@ let user: SMUser = SMUser(name: "Some Name", email: "mail@example.com", phone: "
 ### Setting Parameters to SMWebViewController
 ```ruby
 let toket: String = "Some token"
-let showID: Int = "172704"
+let eventShowId: Int = "172704"
 vc.setParameters(accessToken: token, eventShowId: showID, user: user) { [weak self] (result, error) in
   if let error: SMError = error {
       // handle error 
@@ -44,8 +44,8 @@ vc.setParameters(accessToken: token, eventShowId: showID, user: user) { [weak se
 }
 ```
 
- - **orderId** int, 
- - **status** string, `completed|expired|pending payment`
+ - **orderId** - int, 
+ - **status** - string, `completed|expired|pending payment`
 
 ### Payment
 For the testing purchase use `Payfort Test` payment gateway. 
