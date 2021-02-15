@@ -45,7 +45,7 @@ vc.setParameters(accessToken: token, eventShowId: showID, user: user) { [weak se
 ```
 
  - **orderId** - int, 
- - **status** - string, `completed|expired|pending payment`
+ - **status** - string, `completed|expired|pending payment` - current order status
 
 ### Payment
 For the testing purchase use `Payfort Test` payment gateway. 
