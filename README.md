@@ -19,9 +19,11 @@ let user: SMUser = SMUser(name: "Some Name", email: "mail@example.com", phone: "
 ```
 - **name** - string, 5 - 200 chars
 - **email** - string, 5 - 200 chars
-- **phone** - expect valid phone number
-- **nationalityId** - int
-- **cityId** - int
+- **phone** - string, expect valid phone number
+- **nationalityId** - int, [Method returns available nationality ids](https://docs.platinumlist.net/api/v7/#country-country-list-get)
+- **cityId** - int, [Method returns available city ids](https://docs.platinumlist.net/api/v7/#city-city-list)
+
+ `When the first ticket was added the basket has expiration time equal 15 minutes.`
 
 ### Setting Parameters to SMWebViewController
 ```ruby
@@ -41,3 +43,13 @@ vc.setParameters(accessToken: token, eventShowId: showID, user: user) { [weak se
   }
 }
 ```
+
+ - **orderId** int, 
+ - **status** string, `completed|expired|pending payment`
+
+### Payment
+For the testing purchase use `Payfort Test` payment gateway. 
+[Available credit card credentials](https://paymentservices.amazon.com/docs/EN/12.html#test-payment-card-numbers)
+
+### Order details
+[Method returns info about order](https://docs.platinumlist.net/api/v7/#order-order)
