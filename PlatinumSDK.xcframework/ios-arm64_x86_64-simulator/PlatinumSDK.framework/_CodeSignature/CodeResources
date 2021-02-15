@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PlatinumSDK-Swift.h</key>
 		<data>
-		PVRH81gujmlcxulY1nNHDjhdvZk=
+		U5AvlyI5xGUfmiRgIprNz/8PzRw=
 		</data>
 		<key>Headers/platinum_ios_sdk.h</key>
 		<data>
@@ -14,55 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8KAXmonqHEwrPnJNFKpLgK9XeH4=
+		p9gt6lo2vuCEjmm3SlVZk1Po/NY=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		MZ7w/cm5jRX1P52fy/v+iBua67k=
+		zH8gubFCCUsTGUZhNje/+UqOPE8=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		52jfEkcrO4uuocd+e8RtMMjzTN8=
+		XKsQT/7eMv6YA2TkX+7S8sLmS7M=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		y+ohNw8FmLLtynvmRC5Ue5VO+NQ=
+		NZqMV9TCgP9rcFjhUz+vhOENxeI=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		MZ7w/cm5jRX1P52fy/v+iBua67k=
+		zH8gubFCCUsTGUZhNje/+UqOPE8=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		52jfEkcrO4uuocd+e8RtMMjzTN8=
+		XKsQT/7eMv6YA2TkX+7S8sLmS7M=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		y+ohNw8FmLLtynvmRC5Ue5VO+NQ=
+		NZqMV9TCgP9rcFjhUz+vhOENxeI=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		uyf5axJZzkJCbMYnPdp/iBufGKc=
+		vnfJDV3ogVpWFfRTPajPAZTe9z8=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		M24u2sZytennWqUlH7va2CZ0+4I=
+		ZRcQrYWdKTF8b0WSSSLGx24GR7g=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qQOZlQG/GUKEaXfsQ6lWVu8DfFo=
+		yp1pKo45xRWnwGknAhqxXCz4OgE=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		uyf5axJZzkJCbMYnPdp/iBufGKc=
+		vnfJDV3ogVpWFfRTPajPAZTe9z8=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		M24u2sZytennWqUlH7va2CZ0+4I=
+		ZRcQrYWdKTF8b0WSSSLGx24GR7g=
 		</data>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		qQOZlQG/GUKEaXfsQ6lWVu8DfFo=
+		yp1pKo45xRWnwGknAhqxXCz4OgE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEjo1tuk8d5blBupx30LqA3H/u8Mw2lQ5NPYETPDJU8=
+			LM/eJjYkUofVMO8onTVjbwyt7/PB7JmoYB/n8eW435w=
 			</data>
 		</dict>
 		<key>Headers/platinum_ios_sdk.h</key>
@@ -89,84 +89,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OhK+QyfFtv0HukHsFGreflyx+YvxkI/u3EMPeOFaRwk=
+			uUC0vAYjKgldRouBTsoTphUw/2mhVqKPTh0/GrMlzz8=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HtTaWc4H+Chk+/2VjDbJbZjG9OtPtTe6HgYg8f0HQ7Y=
+			pekkNUf+3MosTVWZ1ba0yR3nCAyPSRtVF84TkeWf/1c=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Myu3dSFuFxggBkTiYk/ynV1JhKXEjsfYe36hTIOE/V0=
+			sC4MEOHaSvZWYlR9xe7l0f9lGwITfTfOALVtyUDsBjg=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OhK+QyfFtv0HukHsFGreflyx+YvxkI/u3EMPeOFaRwk=
+			uUC0vAYjKgldRouBTsoTphUw/2mhVqKPTh0/GrMlzz8=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HtTaWc4H+Chk+/2VjDbJbZjG9OtPtTe6HgYg8f0HQ7Y=
+			pekkNUf+3MosTVWZ1ba0yR3nCAyPSRtVF84TkeWf/1c=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Myu3dSFuFxggBkTiYk/ynV1JhKXEjsfYe36hTIOE/V0=
+			sC4MEOHaSvZWYlR9xe7l0f9lGwITfTfOALVtyUDsBjg=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sndjSi039CSzSKagCnl/43DN797FeYzeDXOSApFj5q0=
+			fRSL+aH7bwem7AYkF8NVJzUIcj+oag+Yj9kV7JD2/ys=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qASCFBrHckAPkolbYu1Hp4g0RfCXXvE+xzvmoQcwquY=
+			rl9vQ0por1N0a/Wg/XQANdizP5c5eQDtw1I1C4cge30=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			++itLDBNc+S0jQmml46qQSb3FZUAyatwx+VUdvM1zV4=
+			Rp31Oehc8/JwWUiQ8DQJMGoXHk90S848TaXI6MHll0Y=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sndjSi039CSzSKagCnl/43DN797FeYzeDXOSApFj5q0=
+			fRSL+aH7bwem7AYkF8NVJzUIcj+oag+Yj9kV7JD2/ys=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qASCFBrHckAPkolbYu1Hp4g0RfCXXvE+xzvmoQcwquY=
+			rl9vQ0por1N0a/Wg/XQANdizP5c5eQDtw1I1C4cge30=
 			</data>
 		</dict>
 		<key>Modules/PlatinumSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			++itLDBNc+S0jQmml46qQSb3FZUAyatwx+VUdvM1zV4=
+			Rp31Oehc8/JwWUiQ8DQJMGoXHk90S848TaXI6MHll0Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
