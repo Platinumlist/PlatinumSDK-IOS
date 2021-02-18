@@ -1,6 +1,6 @@
 # PlatinumSDK-IOS
 ## Requirements
-iOS 12.0+ / macOS 10.15+
+iOS 11.0+ / macOS 10.15+
 Swift 5.0+
 ## Installation
 ### CocoaPods
