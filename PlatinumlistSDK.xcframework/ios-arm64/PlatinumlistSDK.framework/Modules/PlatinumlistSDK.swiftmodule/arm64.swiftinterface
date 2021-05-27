@@ -1,0 +1,119 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PlatinumlistSDK
+import Foundation
+import PassKit
+@_exported import PlatinumlistSDK
+import Swift
+import UIKit
+import WebKit
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SMWebViewController : UIKit.UIViewController, PassKit.PKAddPassesViewControllerDelegate {
+  public var language: PlatinumlistSDK.SMLanguage {
+    get
+  }
+  public var accessToken: Swift.String? {
+    get
+  }
+  public var eventId: Swift.String? {
+    get
+  }
+  public var eventShowId: Swift.String? {
+    get
+  }
+  public var sdkType: PlatinumlistSDK.SDKType {
+    get
+  }
+  public var eventShowSetting: Swift.String {
+    get
+  }
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  public func setParameters(sdk: PlatinumlistSDK.SDKType, accessToken: Swift.String, eventId: Swift.String? = nil, eventShowId: Swift.String? = nil, eventShowSetting: Swift.Bool? = true, user: PlatinumlistSDK.SMUser? = nil, language: PlatinumlistSDK.SMLanguage? = nil, completion: @escaping PlatinumlistSDK.SMResultCallback)
+  public func processUser(tokenStr: Swift.String, socialType: PlatinumlistSDK.SMSocialType)
+  public func processCheckout(_ user: PlatinumlistSDK.SMUser)
+  public func removeCurrentUser()
+  @objc deinit
+}
+public struct SMUser : Swift.Codable {
+  public let name: Swift.String
+  public let email: Swift.String
+  public let phone: Swift.String
+  public let nationalityId: Swift.Int
+  public let cityId: Swift.Int
+  public init(name: Swift.String, email: Swift.String, phone: Swift.String, nationalityId: Swift.Int, cityId: Swift.Int)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension SMWebViewController : WebKit.WKNavigationDelegate {
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+}
+public typealias EmptyCallback = () -> Swift.Void
+public typealias Callback<SMError> = (SMError) -> Swift.Void
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SMWebManager : ObjectiveC.NSObject {
+  public static let shared: PlatinumlistSDK.SMWebManager
+  public func updateToFailed(idOrder: Swift.Int, success: PlatinumlistSDK.EmptyCallback? = nil, failure: PlatinumlistSDK.Callback<PlatinumlistSDK.SMError>? = nil)
+  public func updateToCompleted(idOrder: Swift.Int, amount: Swift.Float, success: PlatinumlistSDK.EmptyCallback? = nil, failure: PlatinumlistSDK.Callback<PlatinumlistSDK.SMError>? = nil)
+  @objc deinit
+}
+public typealias SMResultCallback = ((PlatinumlistSDK.SMResult?, PlatinumlistSDK.SMError?) -> Swift.Void)
+public enum SMError : Swift.Error {
+  case wrongParameters
+  case applePayAuthorization
+  case applePayTransaction
+  case appleWallet(error: Swift.Error)
+  case unknown
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+public enum SDKType : Swift.String {
+  case purchase
+  case ticketOffice
+  case selectTickets
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+public enum SMLanguage : Swift.String {
+  case en
+  case ar
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+public enum SMSocialType : Swift.String {
+  case dtcm
+  case apple
+  case google
+  case facebook
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SMResult {
+  case addUser
+  case orderStatus(_: Swift.String?, id: Swift.Int)
+  case errorMessage(_: Swift.String?, code: Swift.Int)
+  case goBack
+  case close
+  case apple
+}
+extension PlatinumlistSDK.SDKType : Swift.Equatable {}
+extension PlatinumlistSDK.SDKType : Swift.Hashable {}
+extension PlatinumlistSDK.SDKType : Swift.RawRepresentable {}
+extension PlatinumlistSDK.SMLanguage : Swift.Equatable {}
+extension PlatinumlistSDK.SMLanguage : Swift.Hashable {}
+extension PlatinumlistSDK.SMLanguage : Swift.RawRepresentable {}
+extension PlatinumlistSDK.SMSocialType : Swift.Equatable {}
+extension PlatinumlistSDK.SMSocialType : Swift.Hashable {}
+extension PlatinumlistSDK.SMSocialType : Swift.RawRepresentable {}

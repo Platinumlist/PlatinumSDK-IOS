@@ -1,0 +1,11 @@
+framework module PlatinumlistSDK {
+  umbrella header "PlatinumlistSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module PlatinumlistSDK.Swift {
+    header "PlatinumlistSDK-Swift.h"
+    requires objc
+}
