@@ -105,7 +105,7 @@ vc.setParameters(sdk: sdkType, accessToken: token, eventId: idEventStr, language
         switch result {
         case .addUser:
         
-            // the last chanse to add user to process checkout
+            // the last chance to add a user to process checkout 
             // to do this create and setup SMUser to your SMWebViewController
         case .orderStatus(let status, let orderId):
 
